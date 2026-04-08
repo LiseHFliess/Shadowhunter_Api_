@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: Shadowhunters-API
+
+  # 1. Banco de Dados H2
+  datasource:
+    url: jdbc:h2:mem:shadowdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  # 2. Console do H2 (Acesse em /h2-console)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # 3. JPA e Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # 4. HATEOAS
+  hateoas:
+    use-hal-as-default-json-media-type: true
+
+# 5. Swagger / OpenAPI (Acesse em /swagger-ui.html)
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

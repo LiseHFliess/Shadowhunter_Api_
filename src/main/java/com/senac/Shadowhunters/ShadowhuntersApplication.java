@@ -1,0 +1,13 @@
+package com.senac.Shadowhunters;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ShadowhuntersApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ShadowhuntersApplication.class, args);
+	}
+
+}
